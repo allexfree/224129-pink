@@ -1,12 +1,232 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Рабочий проект Пинк | Главная</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="wrapper">
+      <nav class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item"><a href="index.html">Главная</a></li>
+          <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-menu__item"><a href="competition.html">Конкурс</a></li>
+          <li class="main-menu__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+        </ul>
+      </nav>
+      <div class="page-header__topline">
+        <a class="page-header__topline__logo" href="index.html">
+          <img class="page-header__logo__img" src="img/htmlacademy.svg" width="75" height="22" alt="Logo">
+        </a>
+        <button class="toggle-button">
+          <span class="toggle-button__sandwich">
+            <span class="toggle-button__sandwich__item"><i class="fa fa-bars"></i></span>
+            <span class="toggle-button__sandwich__item"><i class="fa fa-times"></i></span>
+          </span>
+        </button>
+      </div>
+      <div class="header__bottomline">
+        <a class="button header-button" href="#">Скачать приложение</a>
+        <div class="header__bottomline__img">
+          <img class="header__bottomline__img__item" src="#" alt="Apple">
+          <img class="header__bottomline__img__item" src="#" alt="Android">
+          <img class="header__bottomline__img__item" src="#" alt="Windows" >
+        </div>
+        <div class="bottomline__description">
+          <p class="bottomline__description__self">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="section-question">
+    <div class="wrapper">
+      <h1 class="hidden">Взгляните на жизнь иначе</h1>
+      <p class="section-question__self">Устали от серости мегаполиса?</p>
+      <p class="section-question__answer">Нам есть, что Вам предложить!</p>
+    </div>
+  </section>
+  <main class="main-advantage">
+    <div class="wrapper">
+      <h2 class="main-advantage__first">Поднимает настроение</h2>
+      <p class="main-advantage__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+      <h2 class="main-advantage__two">Меняет мир вокруг</h2>
+      <p class="main-advantage__desription">Сделайте снимоки украсьте его смайликом или текстовой подписью, чтобы усилть эффект</p>
+      <h2 class="main-advantage__three">Заводит новых друзей</h2>
+      <p class="main-advantage__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями изаводите новых</p>
+      <img class="main-advantage__img" src="#" alt="Device">
+    </div>
+  </main>
+  <section class="section-reviews">
+    <h2 class="hidden">Отзывы о нас</h2>
+    <div class="section-reviews__slider">
+      <input id="button_1" type="radio">
+      <input id="button_2" type="radio">
+      <input id="button_3" type="radio">
+      <blockquote class="section-reviews__item">
+        <cite class="section-reviews__author">
+          Николай Петров
+        </cite>
+        <p class="section-reviews__description">
+          &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+        </p>
+      </blockquote>
+      <blockquote class="section-reviews__item">
+        <cite class="section-reviews__author">
+          Николай Петров
+        </cite>
+        <p class="section-reviews__description">
+          &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+        </p>
+      </blockquote>
+      <blockquote class="section-reviews__item">
+        <cite class="section-reviews__author">
+          Николай Петров
+        </cite>
+        <p class="section-reviews__description">
+          &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+        </p>
+      </blockquote>
+    </div>
+    <div class="section-reviews__slider__pagination">
+      <label class="section-reviews__slider__pagination__item" for="button_1"></label>
+      <label class="section-reviews__slider__pagination__item" for="button_2"></label>
+      <label class="section-reviews__slider__pagination__item" for="button_3"></label>
+    </div>
+  </section>
+  <section class="section-programs">
+    <div class="wrapper">
+      <h2 class="hidden">Наши программы</h2>
+      <div class="section-programs__slider">
+        <input id="button_4" type="radio">
+        <input id="button_5" type="radio">
+        <input id="button_6" type="radio">
+        <div class="hit">Хит</div>
+        <table class="section-programs__table"><!--Program one-->
+          <tr class="section-programs__table__row">
+            <th colspan="2" class="section-programs__table__head">
+              Стандарт<br>3,99 usd
+            </th>
+          </tr>
+          <tr class="section-programs__table__row">
+            <td class="section-programs__table__description">
+              Розовый фильтр
+            </td>
+            <td class="section-programs__table__mode">
+              <i class="fa fa-check"></i>
+            </td>
+          </tr>
+          <tr class="section-programs__table__row">
+            <td class="section-programs__table__description">
+              Смайлики
+            </td>
+            <td class="section-programs__table__mode">
+              <i class="fa fa-check"></i>
+            </td>
+          </tr>
+          <tr class="section-programs__table__row">
+            <td class="section-programs__table__description">
+              Комментарии
+            </td>
+            <td class="section-programs__table__mode">
+              <i class="fa fa-times"></i>
+            </td>
+          </tr>
+        </table>
+        <table class="section-programs__table"><!--Program two-->
+          <tr class="section-programs__table__row">
+            <th colspan="2" class="section-programs__table__head">
+              База<br>1,99 usd
+            </th>
+          </tr>
+          <tr class="section-programs__table__row">
+            <td class="section-programs__table__description">
+              Розовый фильтр
+            </td>
+            <td class="section-programs__table__mode">
+              <i class="fa fa-check"></i>
+            </td>
+          </tr>
+          <tr class="section-programs__table__row">
+            <td class="section-programs__table__description">
+              Смайлики
+            </td>
+            <td class="section-programs__table__mode">
+              <i class="fa fa-times"></i>
+            </td>
+          </tr>
+          <tr class="section-programs__table__row">
+            <td class="section-programs__table__description">
+              Комментарии
+            </td>
+            <td class="section-programs__table__mode">
+              <i class="fa fa-times"></i>
+            </td>
+          </tr>
+        </table>
+        <table class="section-programs__table"><!--Program three-->
+          <tr class="section-programs__table__row">
+            <th colspan="2" class="section-programs__table__head">
+              Анлим<br>9,99 usd
+            </th>
+          </tr>
+          <tr class="section-programs__table__row">
+            <td class="section-programs__table__description">
+              Розовый фильтр
+            </td>
+            <td class="section-programs__table__mode">
+              <i class="fa fa-check"></i>
+            </td>
+          </tr>
+          <tr class="section-programs__table__row">
+            <td class="section-programs__table__description">
+              Смайлики
+            </td>
+            <td class="section-programs__table__mode">
+              <i class="fa fa-check"></i>
+            </td>
+          </tr>
+          <tr class="section-programs__table__row">
+            <td class="section-programs__table__description">
+              Комментарии
+            </td>
+            <td class="section-programs__table__mode">
+              <i class="fa fa-check"></i>
+            </td>
+          </tr>
+        </table>
+        <div class="section-programs__slider__pagination">
+          <label class="section-programs__slider__pagination__item" for="button_4"></label>
+          <label class="section-programs__slider__pagination__item" for="button_5"></label>
+          <label class="section-programss__slider__pagination__item" for="button_6"></label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <div class="wrapper">
+      <h3 class="rest-question">
+        Остались вопросы?
+      </h3>
+      <p class="call-us">
+        Свяжитесь с нами!
+      </p>
+      <p class="tel">
+        Звоните:<br>
+        <a class="tel__link" href="tel:+78125556666">+7(812)555-66-66</a>
+      </p>
+      <p class="email">
+        Пишите:<br>
+        <a class="email__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </p>
+      <p class="adress">
+        Приезжайте в гости:<br>
+        Большая Конюшенная, 19/8
+      </p>
+      <div class="target">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=mymaps%3AA3A2-tfLzG_YCPmrn9wt023CnACq1KsD&amp;lang=ru_RU&amp;scroll=true&amp;source=constructor" height="350"></iframe>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
