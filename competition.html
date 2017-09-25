@@ -6,110 +6,111 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="wrapper">
-      <nav class="main-menu">
-        <ul class="main-menu__list">
-          <li class="main-menu__item"><a href="index.html">Главная</a></li>
-          <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-menu__item"><a href="competition.html">Конкурс</a></li>
-          <li class="main-menu__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
-        </ul>
-      </nav>
-      <div class="page-header__topline">
-        <a class="page-header__topline__logo" href="index.html">
-          <img class="page-header__logo__img" src="img/htmlacademy.svg" width="75" height="22" alt="Logo">
+    <div class="page-header__top">
+      <div class="wrapper">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-img" src="#" alt="Logo">
         </a>
-        <button class="toggle-button">
-          <span class="toggle-button__sandwich">
-            <span class="toggle-button__sandwich__item"><i class="fa fa-bars"></i></span>
-            <span class="toggle-button__sandwich__item"><i class="fa fa-times"></i></span>
-          </span>
-        </button>
+        <nav class="main-menu">
+          <button class="main-menu__toggle">
+            <span class="main-menu__toggle-item">
+
+            </span>
+          </button>
+          <ul class="main-menu__list">
+            <li class="main-menu__item"><a href="index.html">Главная</a></li>
+            <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-menu__item"><a href="competition.html">Конкурс</a></li>
+            <li class="main-menu__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+          </ul>
+        </nav>
+        <div class="intro">
+          <h1 class="intro__title">
+            Конкурс на самое безбашенное путешествие с Пинк
+          </h1>
+        </div>
       </div>
-      <h1 class="page-caption">
-        Конкурс на самое безбашенное путешествие с Пинк
-      </h1>
     </div>
   </header>
-  <section class="section-form">
+  <main class="page-main">
     <div class="wrapper">
-      <h2 class="section-form__caption">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
-      </h2>
-      <form id="main-form" class="master-form">
-        <div class="master-form__username">
-          <label class="master-form__label-surname" for="surname">Фамилия: </label>
-          <input class="master-form__input-surname" id="surname" type="text" placeholder="Укажите фамилию *" required>
-          <label class="master-form__label-name" for="name">Имя: </label>
-          <input class="master-form__input-name" id="name" type="text" placeholder="Введите ваше имя *" required>
-          <label class="master-form__label-middlename" for="middlename">Отчество: </label>
-          <input class="master-form__input-middlename" id="middlename" type="text" placeholder="Ну и отчество тоже">
-        </div>
-        <div class="master-form__achievements">
-          <p class="master-form__achievements-caption">
-            Ваши безбашенные достижения в путешествии
-          </p>
-          <input class="master-form__input-selfi" id="selfi" type="radio" checked>
-          <label class="master-form__label-selfi" for="selfi">Сделал селфи с акулой</label>
-          <input class="master-form__input-burn" id="burn" type="radio" checked>
-          <label class="master-form__label-burn" for="burn">Обгорел на пляже</label>
-          <input class="master-form__input-norris" id="norris" type="radio">
-          <label class="master-form__label-norris" for="norris">Видел Чака Норрса</label>
-          <input class="master-form__input-gifts" id="gifts" type="radio">
-          <label class="master-form__label-gifts" for="gifts">Накупил сувениров</label>
-          <input class="master-form__input-tower" id="tower" type="radio">
-          <label class="master-form__label-tower" for="tower">Удержал башню</label>
-          <input class="master-form__input-destroy" id="destroy" type="radio" checked>
-          <label class="master-form__label-destroy" for="destroy">Разгромил отель</label>
-        </div>
-        <div class="master-form__user-contacts">
-          <label for="tel">Номер телефона </label>
-          <input class="master-form__input-tel" id="tel" type="tel" pattern="(\+?\d[- .]*){7,13}" placeholder="Номер, пожалуйста">
-          <label for="email">Адрес почты </label>
-          <input class="master-form__input-email" id="email" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Введите почту *" required>
-        </div>
-        <div class="master-form__applications">
-          <p class="master-form__applications-caption">
-            С каким приложением путешествовали?
-          </p>
-          <input class="master-form__input-ios" id="app-ios" type="radio" checked>
-          <label class="master-form__label-ios" for="app-ios">Pink для iOS</label>
-          <input class="master-form__input-android" id="app-android" type="radio">
-          <label class="master-form__label-android" for="app-android">Pink на Android</label>
-          <input class="master-form__input-windows" id="app-windows" type="radio">
-          <label class="master-form__label-windows" for="app-windows">Windows Phone</label>
-        </div>
-        <div class="master-form__emotions">
-          <p class="master-form__emotions-caption">
-            Опишите свои эмоции
-          </p>
-          <textarea class="master-form__massage" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </div>
-        <button class="button master-button" name="main-submit" type="submit">Отправить форму</button>
-        <div class="master-form__remark">
-          <p class="master-form__remark-caption">
-            * - обязательные поля
-          </p>
-        </div>
-      </form>
+      <div class="promo">
+        <p class="promo__text">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        </p>
+      </div>
     </div>
-  </section>
+    <form id="main-form" class="contest-form" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="contest-form__group">
+        <div class="contest-form__wrapper">
+          <label class="contest-form__label-surname" for="surname">Фамилия: </label>
+          <input class="contest-form__input" id="surname" name="surname" type="text" placeholder="Укажите фамилию *" required>
+          <label class="contest-form__label-name" for="name">Имя: </label>
+          <input class="contest-form__input" id="name" name="name" type="text" placeholder="Введите ваше имя *" required>
+          <label class="contest-form__label-middlename" for="middlename">Отчество: </label>
+          <input class="contest-form__input" id="middlename" name="middlename" type="text" placeholder="Ну и отчество тоже">
+        </div>
+      </fieldset>
+      <fieldset class="contest-form__group">
+        <h2 class="contest-form__title">
+          Ваши безбашенные достижения в путешествии
+        </h2>
+        <input class="contest-form__input-check" id="selfi" name="selfi" type="checkbox" checked>
+        <label class="contest-form__label-selfi" for="selfi">Сделал селфи с акулой</label>
+        <input class="contest-form__input-check" id="burn" name="burn" type="checkbox" checked>
+        <label class="contest-form__label-burn" for="burn">Обгорел на пляже</label>
+        <input class="contest-form__input-check" id="norris" name="norris" type="checkbox">
+        <label class="contest-form__label-norris" for="norris">Видел Чака Норрса</label>
+        <input class="contest-form__input-check" id="gifts" name="gifts" type="checkbox">
+        <label class="contest-form__label-gifts" for="gifts">Накупил сувениров</label>
+        <input class="contest-form__input-check" id="tower" name="tower" type="checkbox">
+        <label class="contest-form__label-tower" for="tower">Удержал башню</label>
+        <input class="contest-form__input-check" id="destroy" name="destroy" type="checkbox" checked>
+        <label class="contest-form__label-destroy" for="destroy">Разгромил отель</label>
+      </fieldset>
+      <fieldset class="contest-form__group">
+        <label class="contest-form__label-tel" for="tel">Номер телефона </label>
+        <input class="master-form__input" id="tel" name="tel" type="tel" pattern="(\+?\d[- .]*){7,13}" placeholder="Номер, пожалуйста">
+        <label class="contest-form__label-email" for="email">Адрес почты </label>
+        <input class="master-form__input" id="email" name="email" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Введите почту *" required>
+      </fieldset>
+      <fieldset class="contest-form__group">
+        <h2 class="contest-form__title">
+          С каким приложением путешествовали?
+        </h2>
+        <input class="contest-form__input-radio" id="app-ios" name="apps" type="radio" checked>
+        <label class="contest-form__label-ios" for="app-ios">Pink для iOS</label>
+        <input class="contest-form__input-radio" id="app-android" name="apps" type="radio">
+        <label class="contest-form__label-android" for="app-android">Pink на Android</label>
+        <input class="contest-form__input-radio" id="app-windows" name="apps" type="radio">
+        <label class="contest-form__label-windows" for="app-windows">Windows Phone</label>
+      </fieldset>
+      <fieldset class="contest-form__group">
+        <h2 class="contest-form__title">
+          Опишите свои эмоции
+        </h2>
+        <textarea class="contest-form__massage" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </fieldset>
+      <button class="button contest__btn" type="submit">
+        Отправить форму
+      </button>
+      <p class="contest-form__remark">
+        <sup>*</sup> - обязательные поля
+      </p>
+    </form>
+  </main>
   <footer class="page-footer">
     <div class="wrapper">
-      <div class="page-footer__logo">
-        <a class="page-footer__logo-link" href="#">
-          <img class="page-footer__logo-img" src="#" alt="logo">
-        </a>
-      </div>
+      <a class="page-footer__logo" href="#">
+        <img class="page-footer__logo-img" src="#" alt="logo">
+      </a>
       <div class="page-footer__social">
         <a class="page-footer__social-link" href="https://twitter.com/"><i class="fa fa-twitter"></i>Twitter</a>
         <a class="page-footer__social-link" href="https://www.facebook.com/"><i class="fa fa-facebook"></i>Facebook</a>
         <a class="page-footer__social-link" href="https://www.youtube.com"><i class="fa fa-youtube-play"></i>Youtube</a>
       </div>
-      <div class="page-footer__developer">
-        <p class="page-footer__developer-caption">
-          Разработано<a class="page-footer__developer-link" href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" width="75" height="22" alt="HTML academy" class="page-footer__developer-img"></a>
-        </p>
+      <div class="page-footer__copyright">
+        Разработано<a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="75" height="22" alt="HTML academy" class="page-footer__developer-img"></a>
       </div>
     </div>
   </footer>

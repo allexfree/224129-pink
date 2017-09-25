@@ -6,168 +6,197 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="wrapper">
-      <nav class="main-menu">
-        <ul class="main-menu__list">
-          <li class="main-menu__item"><a href="index.html">Главная</a></li>
-          <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-menu__item"><a href="competition.html">Конкурс</a></li>
-          <li class="main-menu__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
-        </ul>
-      </nav>
-      <div class="page-header__topline">
-        <a class="page-header__topline__logo" href="index.html">
-          <img class="page-header__logo__img" src="img/htmlacademy.svg" width="75" height="22" alt="Logo">
+    <div class="page-header__top">
+      <div class="wrapper">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-img" src="#" alt="Logo">
         </a>
-        <button class="toggle-button">
-          <span class="toggle-button__sandwich">
-            <span class="toggle-button__sandwich__item"><i class="fa fa-bars"></i></span>
-            <span class="toggle-button__sandwich__item"><i class="fa fa-times"></i></span>
-          </span>
-        </button>
-      </div>
-      <h1 class="page-caption">
-        Фотографии пользователей
-      </h1>
-    </div>
-  </header>
-  <section class="panorama">
-    <div class="wrapper">
-      <h2 class="panorama-caption">
-        Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?
-      </h2>
-    </div>
-    <figure class="panorama__self">
-      <img class="panorama__photo" src="#" alt="Panorama">
-      <div class="panorama__frame">Панорама дня</div>
-      <figcaption class="panorama__description wrapper">
-        <p class="panorama__author">
-          Анна <span class="panorama__post-time">(5 минут назад)</span>
-        </p>
-        Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-        <p class="panorama__like">
-          <i class="fa fa-heart-o"></i>Нравится: 215
-        </p>
-      </figcaption>
-    </figure>
-  </section>
-  <section class="photos">
-    <div class="wrapper">
-      <figure class="photos__item"><!--Первое фото-->
-        <img class="photos__img" src="#" alt="Auto">
-        <figcaption class="photos__description">
-          <p class="photos__author">
-            Левон <span class="photos__post-time">(5 часов назад)</span>
-          </p>
-          Вчера он на луну летал, сегодня в руки к нам попал.
-          <p class="photos__like">
-            <i class="fa fa-heart-o"></i>Нравится: 356
-          </p>
-        </figcaption>
-      </figure>
-      <figure class="photos__item"><!--Второе фото-->
-        <img class="photos__img" src="#" alt="Drums">
-        <figcaption class="photos__description">
-          <p class="photos__author">
-            Антон <span class="photos__post-time">(12 часов назад)</span>
-          </p>
-          Соседи будут рады!
-          <p class="photos__like">
-            <i class="fa fa-heart-o"></i>Нравится: 666
-          </p>
-        </figcaption>
-      </figure>
-      <figure class="photos__item"><!--Третье фото-->
-        <img class="photos__img" src="#" alt="Construction">
-        <figcaption class="photos__description">
-          <p class="photos__author">
-            Борис <span class="photos__post-time">(20 часов назад)</span>
-          </p>
-          Здесь могла быть ваша цитата о высоком и вечном.
-          <p class="photos__like">
-            <i class="fa fa-heart-o"></i>Нравится: 215
-          </p>
-        </figcaption>
-      </figure>
-      <figure class="photos__item"><!--Четвертое фото-->
-        <img class="photos__img" src="#" alt="Kuban">
-        <figcaption class="photos__description">
-          <p class="photos__author">
-            Сергей <span class="photos__post-time">(25 часов назад)</span>
-          </p>
-          Самая кубанская в мире!
-          <p class="photos__like">
-            <i class="fa fa-heart-o"></i>Нравится: 4
-          </p>
-        </figcaption>
-      </figure>
-      <figure class="photos__item"><!--Пятое фото-->
-        <img class="photos__img" src="#" alt="Abyss">
-        <figcaption class="photos__description">
-          <p class="photos__author">
-            Максим <span class="photos__post-time">(40 часов назад)</span>
-          </p>
-          Где снег-то?
-          <p class="photos__like">
-            <i class="fa fa-heart-o"></i>Нравится: 150
-          </p>
-        </figcaption>
-      </figure>
-      <figure class="photos__item"><!--Шестое фото-->
-        <img class="photos__img" src="#" alt="Flight">
-        <figcaption class="photos__description">
-          <p class="photos__author">
-            Надежда<span class="photos__post-time">(45 часов назад)</span>
-          </p>
-          Всем GM и взаимные лайки!
-          <p class="photos__like">
-            <i class="fa fa-heart-o"></i>Нравится: 2560
-          </p>
-        </figcaption>
-      </figure>
-      <h3 class="photos-caption">
-        Затмите их всех!
-        Выкладывайте все, что накопилось в телефоне!
-      </h3>
-    </div>
-  </section>
-  <section class="palette">
-    <h4 class="hidden">Редактор фотографий</h4>
-    <div class="wrapper">
-      <img class="palette__img" src="#" alt="Any picture">
-      <div class="palette__tools">
-        <img class="palette__crop" src="#" alt="Crop">
-        <img class="palette__bucket" src="#" alt="Bucket">
-        <img class="palette__saturation" src="#" alt="Saturation">
-      </div>
-      <div class="palette__scroll">
-        <div class="palette__scroll-point">
+        <nav class="main-menu">
+          <button class="main-menu__toggle">
+            <span class="main-menu__toggle-item">
 
+            </span>
+          </button>
+          <ul class="main-menu__list">
+            <li class="main-menu__item"><a href="index.html">Главная</a></li>
+            <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-menu__item"><a href="competition.html">Конкурс</a></li>
+            <li class="main-menu__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+          </ul>
+        </nav>
+        <div class="intro">
+          <h1 class="intro__title">
+            Фотографии пользователей
+          </h1>
         </div>
       </div>
-      <div class="palette__buttons">
-        <button class="button pallet-btn-post">Запостить</button>
-        <button class="button pallet-btn-cancel">Отмена</button>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="wrapper">
+      <div class="promo">
+        <p class="promo__text">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </p>
       </div>
     </div>
-  </section>
+    <section class="photo">
+      <div class="wrapper">
+        <article class="photo__item--panorama">
+          <a class="photo__link" href="#">
+            <img class="photo__img" src="#" alt="Panorama">
+          </a>
+          <div class="photo__description">
+            <header class="photo__header">
+              Анна <span>(5 минут назад)</span>
+            </header>
+            <p class="photo__text">
+              Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+            </p>
+            <footer class="photo__footer">
+              <i class="fa fa-heart-o"></i>
+              <a class="photo__likes" href="#">Нравится: 215</a>
+            </footer>
+          </div>
+        </article>
+        <article class="photo__item"><!--Первое фото-->
+          <a class="photo__link" href="#">
+            <img class="photo__img" src="#" alt="Auto">
+          </a>
+          <div class="photo__description">
+            <header class="photo__header">
+              Левон <span>(5 часов назад)</span>
+            </header>
+            <p class="photo__text">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
+            <footer class="photo__footer">
+              <i class="fa fa-heart-o"></i>
+              <a class="photo__likes" href="#">Нравится: 356</a>
+            </footer>
+          </div>
+        </article>
+        <article class="photo__item"><!--Второе фото-->
+          <a class="photo__link" href="#">
+            <img class="photo__img" src="#" alt="Drums">
+          </a>
+          <div class="photo__description">
+            <header class="photo__header">
+              Антон <span>(12 часов назад)</span>
+            </header>
+            <p class="photo__text">
+              Соседи будут рады!
+            </p>
+            <footer class="photo__footer">
+              <i class="fa fa-heart-o"></i>
+              <a class="photo__likes" href="#">Нравится: 666</a>
+            </footer>
+          </div>
+        </article>
+        <article class="photo__item"><!--Третье фото-->
+          <a class="photo__link" href="#">
+            <img class="photo__img" src="#" alt="Construction">
+          </a>
+          <div class="photo__description">
+            <header class="photo__header">
+              Борис <span>(20 часов назад)</span>
+            </header>
+            <p class="photo__text">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
+            <footer class="photo__footer">
+              <i class="fa fa-heart-o"></i>
+              <a class="photo__likes" href="#">Нравится: 215</a>
+            </footer>
+          </div>
+        </article>
+        <article class="photo__item"><!--Четвертое фото-->
+          <a class="photo__link" href="#">
+            <img class="photo__img" src="#" alt="Kuban">
+          </a>
+          <div class="photo__description">
+            <header class="photo__header">
+              Сергей <span>(25 часов назад)</span>
+            </header>
+            <p class="photo__text">
+              Самая кубанская в мире!
+            </p>
+            <footer class="photo__footer">
+              <i class="fa fa-heart-o"></i>
+              <a class="photo__likes" href="#">Нравится: 4</a>
+            </footer>
+          </div>
+        </article>
+        <article class="photo__item"><!--Пятое фото-->
+          <a class="photo__link" href="#">
+            <img class="photo__img" src="#" alt="Abyss">
+          </a>
+          <div class="photo__description">
+            <header class="photo__header">
+              Максим <span>(40 часов назад)</span>
+            </header>
+            <p class="photo__text">
+              Где снег-то?
+            </p>
+            <footer class="photo__footer">
+              <i class="fa fa-heart-o"></i>
+              <a class="photo__likes" href="#">Нравится: 150</a>
+            </footer>
+          </div>
+        </article>
+        <article class="photo__item"><!--Шестое фото-->
+          <a class="photo__link" href="#">
+            <img class="photo__img" src="#" alt="Flight">
+          </a>
+          <div class="photo__description">
+            <header class="photo__header">
+              Надежда <span>(45 часов назад)</span>
+            </header>
+            <p class="photo__text">
+              Всем GM и взаимные лайки!
+            </p>
+            <footer class="photo__footer">
+              <i class="fa fa-heart-o"></i>
+              <a class="photo__likes" href="#">Нравится: 2560</a>
+            </footer>
+          </div>
+        </article>
+        <h2 class="photo__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+      </div>
+    </section>
+    <section class="palette">
+      <h2 class="visually-hidden">Редактор фотографий</h2>
+      <form class="palette__form" action="https://echo.htmlacademy.ru/" method="post">
+        <a class="palette__upload" href="#">
+          <img class="palette__img" src="#" alt="Any picture">
+        </a>
+        <div class="palette__tools">
+          <div class="palette__controls">
+            <button class="palette__range--active" type="button"></button>
+            <button class="palette__range" type="button"></button>
+            <button class="palette__range" type="button"></button>
+          </div>
+          <div class="palette__btns">
+            <button class="palette__btn palette__btn--post" type="submit">Запостить</button>
+            <button class="palette__btn palette__btn--reset" type="reset">Отмена</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
   <footer class="page-footer">
     <div class="wrapper">
-      <div class="page-footer__logo">
-        <a class="page-footer__logo-link" href="#">
-          <img class="page-footer__logo-img" src="#" alt="logo">
-        </a>
-      </div>
+      <a class="page-footer__logo" href="#">
+        <img class="page-footer__logo-img" src="#" alt="logo">
+      </a>
       <div class="page-footer__social">
         <a class="page-footer__social-link" href="https://twitter.com/"><i class="fa fa-twitter"></i>Twitter</a>
         <a class="page-footer__social-link" href="https://www.facebook.com/"><i class="fa fa-facebook"></i>Facebook</a>
         <a class="page-footer__social-link" href="https://www.youtube.com"><i class="fa fa-youtube-play"></i>Youtube</a>
       </div>
-      <div class="page-footer__developer">
-        <p class="page-footer__developer-caption">
-          Разработано<a class="page-footer__developer-link" href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" width="75" height="22" alt="HTML academy" class="page-footer__developer-img"></a>
-        </p>
+      <div class="page-footer__copyright">
+        Разработано<a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="75" height="22" alt="HTML academy" class="page-footer__developer-img"></a>
       </div>
     </div>
   </footer>
