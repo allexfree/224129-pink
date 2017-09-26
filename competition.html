@@ -43,11 +43,11 @@
     <form id="main-form" class="contest-form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="contest-form__group">
         <div class="contest-form__wrapper">
-          <label class="contest-form__label-surname" for="surname">Фамилия: </label>
+          <label class="contest-form__label" for="surname">Фамилия: </label>
           <input class="contest-form__input" id="surname" name="surname" type="text" placeholder="Укажите фамилию *" required>
-          <label class="contest-form__label-name" for="name">Имя: </label>
+          <label class="contest-form__label" for="name">Имя: </label>
           <input class="contest-form__input" id="name" name="name" type="text" placeholder="Введите ваше имя *" required>
-          <label class="contest-form__label-middlename" for="middlename">Отчество: </label>
+          <label class="contest-form__label" for="middlename">Отчество: </label>
           <input class="contest-form__input" id="middlename" name="middlename" type="text" placeholder="Ну и отчество тоже">
         </div>
       </fieldset>
@@ -55,35 +55,41 @@
         <h2 class="contest-form__title">
           Ваши безбашенные достижения в путешествии
         </h2>
-        <input class="contest-form__input-check" id="selfi" name="selfi" type="checkbox" checked>
-        <label class="contest-form__label-selfi" for="selfi">Сделал селфи с акулой</label>
-        <input class="contest-form__input-check" id="burn" name="burn" type="checkbox" checked>
-        <label class="contest-form__label-burn" for="burn">Обгорел на пляже</label>
-        <input class="contest-form__input-check" id="norris" name="norris" type="checkbox">
-        <label class="contest-form__label-norris" for="norris">Видел Чака Норрса</label>
-        <input class="contest-form__input-check" id="gifts" name="gifts" type="checkbox">
-        <label class="contest-form__label-gifts" for="gifts">Накупил сувениров</label>
-        <input class="contest-form__input-check" id="tower" name="tower" type="checkbox">
-        <label class="contest-form__label-tower" for="tower">Удержал башню</label>
-        <input class="contest-form__input-check" id="destroy" name="destroy" type="checkbox" checked>
-        <label class="contest-form__label-destroy" for="destroy">Разгромил отель</label>
+        <div class="contest-form__wrapper">
+          <input class="contest-form__input-check" id="selfi" name="selfi" type="checkbox" checked>
+          <label class="contest-form__label-check" for="selfi">Сделал селфи с акулой</label>
+          <input class="contest-form__input-check" id="burn" name="burn" type="checkbox" checked>
+          <label class="contest-form__label-check" for="burn">Обгорел на пляже</label>
+          <input class="contest-form__input-check" id="norris" name="norris" type="checkbox">
+          <label class="contest-form__label-check" for="norris">Видел Чака Норрса</label>
+          <input class="contest-form__input-check" id="gifts" name="gifts" type="checkbox">
+          <label class="contest-form__label-check" for="gifts">Накупил сувениров</label>
+          <input class="contest-form__input-check" id="tower" name="tower" type="checkbox">
+          <label class="contest-form__label-check" for="tower">Удержал башню</label>
+          <input class="contest-form__input-check" id="destroy" name="destroy" type="checkbox" checked>
+          <label class="contest-form__label-check" for="destroy">Разгромил отель</label>
+        </div>
       </fieldset>
       <fieldset class="contest-form__group">
-        <label class="contest-form__label-tel" for="tel">Номер телефона </label>
-        <input class="master-form__input" id="tel" name="tel" type="tel" pattern="(\+?\d[- .]*){7,13}" placeholder="Номер, пожалуйста">
-        <label class="contest-form__label-email" for="email">Адрес почты </label>
-        <input class="master-form__input" id="email" name="email" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Введите почту *" required>
+        <div class="contest-form__wrapper">
+          <label class="contest-form__label" for="tel">Номер телефона </label>
+          <input class="master-form__input" id="tel" name="tel" type="tel" pattern="(\+?\d[- .]*){7,13}" placeholder="Номер, пожалуйста">
+          <label class="contest-form__label" for="email">Адрес почты </label>
+          <input class="master-form__input" id="email" name="email" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Введите почту *" required>
+        </div>
       </fieldset>
       <fieldset class="contest-form__group">
         <h2 class="contest-form__title">
           С каким приложением путешествовали?
         </h2>
-        <input class="contest-form__input-radio" id="app-ios" name="apps" type="radio" checked>
-        <label class="contest-form__label-ios" for="app-ios">Pink для iOS</label>
-        <input class="contest-form__input-radio" id="app-android" name="apps" type="radio">
-        <label class="contest-form__label-android" for="app-android">Pink на Android</label>
-        <input class="contest-form__input-radio" id="app-windows" name="apps" type="radio">
-        <label class="contest-form__label-windows" for="app-windows">Windows Phone</label>
+        <div class="contest-form__wrapper">
+          <input class="contest-form__input-radio" id="app-ios" name="apps" type="radio" checked>
+          <label class="contest-form__label-radio" for="app-ios">Pink для iOS</label>
+          <input class="contest-form__input-radio" id="app-android" name="apps" type="radio">
+          <label class="contest-form__label-radio" for="app-android">Pink на Android</label>
+          <input class="contest-form__input-radio" id="app-windows" name="apps" type="radio">
+          <label class="contest-form__label-radio" for="app-windows">Windows Phone</label>
+        </div>
       </fieldset>
       <fieldset class="contest-form__group">
         <h2 class="contest-form__title">
@@ -91,7 +97,7 @@
         </h2>
         <textarea class="contest-form__massage" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
-      <button class="button contest__btn" type="submit">
+      <button class="btn contest__btn" type="submit">
         Отправить форму
       </button>
       <p class="contest-form__remark">
@@ -114,5 +120,32 @@
       </div>
     </div>
   </footer>
+  <div class="modal modal--error">
+    <div class="wrapper">
+      <b class="modal__title">
+        Что-то пошло не так!
+      </b>
+      <p class="modal__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button class="btn modal__btn" type="submit">
+        Ок
+      </button>
+    </div>
+  </div>
+  <div class="modal modal--succes">
+    <div class="wrapper">
+      <b class="modal__title">
+        Ваша заявка отправлена
+      </b>
+      <p class="modal__text">
+        Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и 
+        оповестим вас.
+      </p>
+      <button class="btn modal__btn" type="submit">
+        Закрыть окно
+      </button>
+    </div>
+  </div>
 </body>
 </html>
