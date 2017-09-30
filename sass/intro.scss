@@ -11,12 +11,14 @@
   font-weight: lighter;
   padding: 0 0 30px 0;
 }
+
 .intro::before {
-  content: url(../img/iphone-hand-mobile@1x.png);
+  content: "url(../img/iphone-hand-mobile@1x.png)";
   position: absolute;
   top: -287px;
   left: 0;
 }
+
 .intro__btn {
   display: block;
   width: 280px;
@@ -31,6 +33,7 @@
   padding: 15px 0 17px 0;
   border-radius: 30px;
 }
+
 .intro__description {
   padding: 0 20px;
 }

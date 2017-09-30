@@ -5,6 +5,7 @@ $fcolorv: #6c7682;
 $fsize: 18px;
 $wmobile: 320px;
 $mgn: 0 auto;
+
 @import "normalize";
 @import "base.scss";
 @import "page-header.scss";
@@ -17,7 +18,6 @@ $mgn: 0 auto;
 @import "contest-form.scss";
 @import "features.scss";
 @import "reviews.scss";
-@import "slider.scss";
 @import "prices.scss";
 @import "contacts.scss";
 @import "map.scss";

@@ -3,9 +3,11 @@
   margin: $mgn;
   text-align: center;
 }
+
 .modal__text {
   background-color: $fcolor;
 }
+
 .modal__btn {
   border: none;
   border-radius: 5px;
@@ -19,10 +21,12 @@
   font-weight: bold;
   padding: 20px;
 }
+
 .modal--succes {
   background-color: #f2f2f2;
   padding-bottom: 50px;
 }
+
 .modal--succes .modal__btn {
   margin-top: 50px;
 }

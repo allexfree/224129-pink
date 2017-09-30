@@ -2,35 +2,43 @@
   width: $wmobile;
   margin: $mgn;
 }
+
 .photo-item {
   width: 280px;
   margin: $mgn;
 }
+
 .photo__img {
   width: 100%;
 }
+
 .photo__description {
   font-size: 14px;
   line-height: 24px;
   background-color: #f2f2f2;
   padding: 20px 20px;
 }
+
 .photo__header {
   font-weight: bold;
 }
+
 .photo__header span {
   font-size: 12px;
   font-weight: normal;
   text-transform: uppercase;
 }
+
 .photo__footer {
   font-size: 12px;
   text-transform: uppercase;
 }
+
 .photo__likes {
-    color: #d22856;
-    text-decoration: none;
+  color: #d22856;
+  text-decoration: none;
 }
+
 .photo__title {
   font-size: 14px;
   line-height: 30px;
