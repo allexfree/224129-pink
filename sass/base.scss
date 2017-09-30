@@ -1,22 +1,22 @@
 body {
-	font-family: sans-serif;
-	font-size: 16px;
-	min-width: 320px;
-	height: 100%;
-	position: relative;
-	font-family: 'Open Sans', sans-serif;
-	overflow-x: hidden;
+  font-family: sans-serif;
+  font-size: 16px;
+  min-width: 320px;
+  height: 100%;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 .visually-hidden {
-	display: none;
+  display: none;
 }
 .wrapper {
-	width: 280px;
-	margin: $mgn;
+  width: 280px;
+  margin: $mgn;
 }
 .page-main {
-	width: $wmobile;
+  width: $wmobile;
 }
 .page-footer {
-	width: $wmobile;
+  width: $wmobile;
 }

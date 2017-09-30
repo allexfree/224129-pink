@@ -1,28 +1,28 @@
 .modal {
-	width: $wmobile;
-	margin: $mgn;
-	text-align: center;
+  width: $wmobile;
+  margin: $mgn;
+  text-align: center;
 }
 .modal__text {
-	background-color: $fcolor;
+  background-color: $fcolor;
 }
 .modal__btn {
-	border: none;
-	border-radius: 5px;
-	display: block;
-	width: 280px;
-	background-color: #2aab6d;
-	color: $fcolor;
-	text-transform: uppercase;
-	font-size: $fsize;
-	line-height: 30px;
-	font-weight: bold;
-	padding: 20px;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  width: 280px;
+  background-color: #2aab6d;
+  color: $fcolor;
+  text-transform: uppercase;
+  font-size: $fsize;
+  line-height: 30px;
+  font-weight: bold;
+  padding: 20px;
 }
 .modal--succes {
-	background-color: #f2f2f2;
-	padding-bottom: 50px;
+  background-color: #f2f2f2;
+  padding-bottom: 50px;
 }
 .modal--succes .modal__btn {
-	margin-top: 50px;
+  margin-top: 50px;
 }

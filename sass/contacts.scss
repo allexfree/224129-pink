@@ -1,25 +1,25 @@
 .contacts {
-	background-color: $fcolor;
-	width: $wmobile;
-	margin: $mgn;
-	text-align: center;
+  background-color: $fcolor;
+  width: $wmobile;
+  margin: $mgn;
+  text-align: center;
 }
 .contacts__title {
-	font-size: 24px;
-	font-weight: lighter;
-	color: #283645;
+  font-size: 24px;
+  font-weight: lighter;
+  color: #283645;
 }
 .contacts__item-title {
-	display: block;
-	margin-bottom: 10px;
-	color: $bcolor;
-	font-size: $fsize;
+  display: block;
+  margin-bottom: 10px;
+  color: $bcolor;
+  font-size: $fsize;
 }
 .contacts__link {
-	display: block;
-	color: #d22856;
-	text-decoration: none;
-	font-size: 24px;
-	font-weight: lighter;
-	margin-bottom: 30px;
+  display: block;
+  color: #d22856;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-bottom: 30px;
 }
