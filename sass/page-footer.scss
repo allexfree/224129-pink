@@ -1,0 +1,17 @@
+.page-footer--hidden {
+	display: none;
+}
+.page-footer {
+	width: $wmobile;
+	margin: $mgn;
+}
+.page-footer__social-img {
+	padding: 20px;
+	border: 2px solid #e9ebec;
+	border-radius: 50%;
+}
+.page-footer__copyright {
+	font-size: 14px;
+	line-height: $fsize;
+	text-align: center;
+}

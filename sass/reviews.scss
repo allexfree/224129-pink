@@ -1,0 +1,20 @@
+.reviews {
+	background-color: $fcolor;
+	width: 280px;
+	padding: 0 20px;
+	text-align: center;
+}
+.reviews__item {
+	margin: 0;
+}
+.reviews__author {
+	font-style: normal;
+	font-size: $fsize;
+	line-height: 30px;
+	font-weight: bold;
+}
+.reviews__text {
+	color: $bcolor;
+	font-size: 14px;
+	line-height: 30px;
+}
