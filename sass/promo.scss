@@ -1,9 +1,9 @@
 .promo {
   background-color: $fcolor;
-  color: #283645;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: lighter;
+  color: $bg-color;
+  font-size: $fsize-big;
+  line-height: 1.25;
+  font-weight: 300;
 }
 
 .promo p {
@@ -13,7 +13,7 @@
 
 .page-main .wrapper p {
   width: 280px;
-  font-size: 14px;
+  font-size: $fsize-little;
   font-weight: 400;
   padding: 0;
 }

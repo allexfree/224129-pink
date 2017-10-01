@@ -1,12 +1,19 @@
 $fcolor: #ffffff;
-$bcolor: #283645;
-$fcolorh: #d22856;
-$fcolorv: #6c7682;
+$bg-color: #283645;
+$color-first: #f2f2f2;
+$color-second: #1d2631;
+$color-third: #d22856;
+$color-fourth: #6c7682;
+$btncolor: #2aab6d;
+$fsize-vlittle: 12px;
+$fsize-little: 14px;
+$font-size: 16px;
 $fsize: 18px;
+$fsize-big: 24px;
 $wmobile: 320px;
 $mgn: 0 auto;
 
-@import "normalize";
+@import "normalize.scss";
 @import "base.scss";
 @import "page-header.scss";
 @import "main-menu.scss";

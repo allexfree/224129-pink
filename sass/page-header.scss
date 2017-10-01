@@ -1,14 +1,15 @@
 .page-header {
-  width: 320px;
+	position: relative;
   margin: $mgn;
-  background-color: $bcolor;
-  background-image: "url(../img/bg-back-mobile@1x.jpg)";
+  background-color: $bg-color;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
   background-size: cover;
   background-position: center center;
   height: 730px;
 }
 
 .page-header__top {
-  position: relative;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

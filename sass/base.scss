@@ -1,25 +1,33 @@
-body {
-  font-size: 16px;
-  min-width: 320px;
+html {
   height: 100%;
+}
+body {
+  font-size: $font-size;
+  min-width: 320px;
+  min-height: 100vh;
+  height: 100%;
+  line-height: 1.6;
+  margin: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
   position: relative;
-  font-family: "Open Sans", sans-serif;
-  overflow-x: hidden;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .wrapper {
   width: 280px;
-  margin: $mgn;
-}
-
-.page-main {
-  width: $wmobile;
-}
-
-.page-footer {
-  width: $wmobile;
+  padding: 0 20px;
 }

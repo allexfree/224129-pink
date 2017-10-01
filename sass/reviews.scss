@@ -12,12 +12,12 @@
 .reviews__author {
   font-style: normal;
   font-size: $fsize;
-  line-height: 30px;
+  line-height: 1.6;
   font-weight: bold;
 }
 
 .reviews__text {
-  color: $bcolor;
-  font-size: 14px;
-  line-height: 30px;
+  color: $bg-color;
+  font-size: $fsize-little;
+  line-height: 2.1;
 }

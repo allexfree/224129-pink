@@ -10,7 +10,7 @@
 }
 
 .contest-form__group:nth-child(2n) {
-  background-color: #f2f2f2;
+  background-color: $color-first;
 }
 
 .contest-form__wrapper {
@@ -22,9 +22,9 @@
   display: block;
   padding: 0 0 0 20px;
   text-transform: uppercase;
-  color: #d22856;
-  font-size: 14px;
-  line-height: 30px;
+  color: $color-third;
+  font-size: $fsize-little;
+  line-height: 2.1;
   margin-top: 20px;
 }
 
@@ -32,18 +32,18 @@
   display: block;
   text-indent: 20px;
   width: 280px;
-  color: $bcolor;
+  color: $bg-color;
   font-size: $fsize;
-  line-height: 30px;
+  line-height: 2.1;
   padding: 20px 0;
   border: 2px solid #e5e5e5;
 }
 
 .contest-form__title {
   text-align: center;
-  font-size: 14px;
+  font-size: $fsize-little;
   line-height: $fsize;
-  color: #d22856;
+  color: $color-third;
   text-transform: uppercase;
 }
 
@@ -54,9 +54,9 @@
 }
 
 .contest-form__label-check {
-  color: $bcolor;
+  color: $bg-color;
   font-size: $fsize;
-  line-height: 30px;
+  line-height: 2.1;
 }
 
 .contest-form__input-radio {
@@ -68,9 +68,9 @@
 .contest-form__massage {
   display: block;
   width: 280px;
-  color: $bcolor;
+  color: $bg-color;
   font-size: $fsize;
-  line-height: 30px;
+  line-height: 2.1;
   padding: 20px;
 }
 
@@ -79,16 +79,16 @@
   border-radius: 5px;
   display: block;
   width: 280px;
-  background-color: #2aab6d;
+  background-color: $btncolor;
   color: $fcolor;
   text-transform: uppercase;
   font-size: $fsize;
-  line-height: 30px;
+  line-height: 2.1;
   font-weight: bold;
   padding: 20px;
 }
 
 .contest-form__remark sup {
   text-align: center;
-  color: #d22856;
+  color: $color-third;
 }

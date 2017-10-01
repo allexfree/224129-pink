@@ -1,12 +1,12 @@
 .features {
   width: 280px;
   padding: 0 20px;
-  background-color: #f2f2f2;
+  background-color: $color-first;
   text-align: center;
 }
 
 .features::after {
-  content: "url(../img/iphone-screen-mobile@1x.png)";
+  content: url(../img/iphone-screen-mobile@1x.png);
 }
 
 .features__list {

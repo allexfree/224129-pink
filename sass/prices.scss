@@ -1,10 +1,9 @@
 .prices {
-  background-color: #f2f2f2;
+  background-color: $color-first;
   text-align: center;
 }
 
 .prices .wrapper {
-  width: $wmobile;
   margin: 0;
 }
 
@@ -19,9 +18,9 @@
 }
 
 .prices__cell {
-  font-size: 14px;
-  line-height: 30px;
-  color: $bcolor;
+  font-size: $fsize-little;
+  line-height: 2.1;
+  color: $bg-color;
   text-transform: uppercase;
   text-align: left;
   border-bottom: 2px solid #e5e5e5;
@@ -29,11 +28,11 @@
 }
 
 .prices__cell--head {
-  background-color: #283645;
+  background-color: $bg-color;
   color: $fcolor;
   text-transform: uppercase;
   font-size: $fsize;
-  line-height: 30px;
+  line-height: 1.9;
   text-align: center;
   padding: 25px 0;
   border-spacing: 0;
@@ -41,6 +40,6 @@
 
 .prices__cell--head span {
   display: block;
-  font-size: 24px;
-  font-weight: lighter;
+  font-size: $fsize-big;
+  font-weight: 300;
 }
