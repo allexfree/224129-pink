@@ -75,6 +75,7 @@
 }
 
 .contest__btn {
+  @include font-set(bold, 2.1);
   border: none;
   border-radius: 5px;
   display: block;
@@ -84,7 +85,6 @@
   text-transform: uppercase;
   font-size: $fsize;
   padding: 20px;
-  @include font-set(bold, 2.1);
 }
 
 .contest-form__remark sup {
