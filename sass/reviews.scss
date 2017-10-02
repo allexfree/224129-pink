@@ -12,6 +12,7 @@
 .reviews__author {
   font-style: normal;
   font-size: $fsize;
+  
   @include font-set(bold, 1.6);
 }
 

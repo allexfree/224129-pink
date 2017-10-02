@@ -2,6 +2,7 @@
   background-color: $fcolor;
   color: $bg-color;
   font-size: $fsize-big;
+  
   @include font-set(300, 1.25);
 }
 
