@@ -12,9 +12,9 @@
 }
 
 .main-menu__list a {
+  @include font-set(bold, 1.8);
   display: block;
   font-size: $fsize;
-  @include font-set(bold, 1.8);
   text-transform: uppercase;
   color: $fcolor;
   text-decoration: none;

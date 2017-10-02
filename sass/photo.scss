@@ -35,8 +35,8 @@
 }
 
 .photo__title {
-  font-size: $fsize-little;
   @include font-set(normal, 2.1);
+  font-size: $fsize-little;
   color: $bg-color;
   text-align: center;
 }
