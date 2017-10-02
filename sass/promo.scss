@@ -2,8 +2,7 @@
   background-color: $fcolor;
   color: $bg-color;
   font-size: $fsize-big;
-  line-height: 1.25;
-  font-weight: 300;
+  @include font-set(300, 1.25);
 }
 
 .promo p {

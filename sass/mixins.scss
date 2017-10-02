@@ -1,0 +1,8 @@
+@mixin font-set($weight, $line-height) {
+	font-weight: $weight;
+	line-height: $line-height;
+}
+
+/*@mixin links($acolor, $avisit, $ahover, $aactive) {
+	a
+}*/

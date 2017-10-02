@@ -83,8 +83,7 @@
   color: $fcolor;
   text-transform: uppercase;
   font-size: $fsize;
-  line-height: 2.1;
-  font-weight: bold;
+  @include font-set(bold, 2.1);
   padding: 20px;
 }
 
