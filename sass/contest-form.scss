@@ -83,8 +83,8 @@
   color: $fcolor;
   text-transform: uppercase;
   font-size: $fsize;
-  
   @include font-set(bold, 2.1);
+  
   padding: 20px;
 }
 
