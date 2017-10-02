@@ -17,7 +17,6 @@
   color: $fcolor;
   text-transform: uppercase;
   font-size: $fsize;
-  
   @include font-set(bold, 1.6);
   padding: 20px;
 }

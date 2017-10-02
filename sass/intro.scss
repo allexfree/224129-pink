@@ -6,7 +6,6 @@
   color: $fcolor;
   text-align: center;
   font-size: $fsize-little;
-
   @include font-set(300, 1.7);
   padding: 0 0 30px 0;
 }
