@@ -1,0 +1,31 @@
+.modal {
+  width: $wmobile;
+  margin: $mgn;
+  text-align: center;
+}
+
+.modal__text {
+  background-color: $fcolor;
+}
+
+.modal__btn {
+  @include font-set(bold, 1.6);
+  border: none;
+  border-radius: 5px;
+  display: block;
+  width: 280px;
+  background-color: $btncolor;
+  color: $fcolor;
+  text-transform: uppercase;
+  font-size: $fsize;
+  padding: 20px;
+}
+
+.modal--succes {
+  background-color: $color-first;
+  padding-bottom: 50px;
+}
+
+.modal--succes .modal__btn {
+  margin-top: 50px;
+}

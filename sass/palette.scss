@@ -1,0 +1,26 @@
+.palette {
+  background-color: $color-first;
+}
+
+.palette__form {
+  width: 280px;
+  padding: 0 20px;
+}
+
+.palette__controls {
+  padding: 0 20px;
+}
+
+.palette__btn {
+  @include font-set(bold, 1);
+  display: block;
+  width: 280px;
+  margin: 30px auto;
+  border: 3px solid #ffffff;
+  text-align: center;
+  font-size: $fsize;
+  color: $fcolor;
+  text-decoration: none;
+  padding: 15px 0 17px 0;
+  border-radius: 30px;
+}

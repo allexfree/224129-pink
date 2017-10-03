@@ -1,0 +1,42 @@
+.photo-item {
+  width: 280px;
+  margin: $mgn;
+}
+
+.photo__img {
+  width: 100%;
+}
+
+.photo__description {
+  font-size: $fsize-little;
+  line-height: 1.7;
+  background-color: $color-first;
+  padding: 20px 20px;
+}
+
+.photo__header {
+  font-weight: bold;
+}
+
+.photo__header span {
+  font-size: $fsize-vlittle;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.photo__footer {
+  font-size: $fsize-vlittle;
+  text-transform: uppercase;
+}
+
+.photo__likes {
+  color: $color-third;
+  text-decoration: none;
+}
+
+.photo__title {
+  @include font-set(normal, 2.1);
+  font-size: $fsize-little;
+  color: $bg-color;
+  text-align: center;
+}

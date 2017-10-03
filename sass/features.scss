@@ -1,0 +1,20 @@
+.features {
+  width: 280px;
+  padding: 0 20px;
+  background-color: $color-first;
+  text-align: center;
+}
+
+.features::after {
+  content: url("../img/iphone-screen-mobile@1x.png");
+}
+
+.features__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features__list li {
+  margin-bottom: 50px;
+}

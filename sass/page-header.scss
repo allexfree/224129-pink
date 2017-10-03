@@ -1,0 +1,15 @@
+.page-header {
+  position: relative;
+  margin: $mgn;
+  background-color: $bg-color;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 730px;
+}
+
+.page-header__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

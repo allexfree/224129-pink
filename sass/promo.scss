@@ -1,0 +1,18 @@
+.promo {
+  @include font-set(300, 1.25);
+  background-color: $fcolor;
+  color: $bg-color;
+  font-size: $fsize-big;
+}
+
+.promo p {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.page-main .wrapper p {
+  width: 280px;
+  font-size: $fsize-little;
+  font-weight: 400;
+  padding: 0;
+}
