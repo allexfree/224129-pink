@@ -36,10 +36,10 @@
   }
 
   .effect__link {
-     @include font-set(400, 1.7);
-     font-size: $fsize-little;
-     color: $color-third;
-  }
+   @include font-set(400, 1.7);
+   font-size: $fsize-little;
+   color: $color-third;
+ }
 }
 
 @media (min-width: 661px) {
@@ -79,8 +79,8 @@
   }
 
   .effect__link {
-     @include font-set(400, 1.6);
-     font-size: $fsize;
-     color: $color-third;
-  }
+   @include font-set(400, 1.6);
+   font-size: $fsize;
+   color: $color-third;
+ }
 }
