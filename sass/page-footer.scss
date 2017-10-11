@@ -18,3 +18,42 @@
   line-height: $fsize;
   text-align: center;
 }
+
+.page-footer .wrapper {
+	flex-direction: column;
+	text-align: center;
+}
+
+@media (min-width: 321px) and (max-width: 660px) {
+  .page-footer--hidden {
+    display: block;
+    margin: $mgn;
+    padding: 50px 0;
+  }
+
+  .page-footer--hidden .wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .page-footer__social-link {
+    margin: 0 15px;
+  }
+}
+
+@media (min-width: 661px) {
+  .page-footer--hidden {
+    display: block;
+    width: 100%;
+  }
+
+  .page-footer--hidden .wrapper {
+    width: 960px;
+    padding: 50px 0;
+    margin: 0 auto;
+  }
+
+  .page-footer__social-link {
+    margin: 0 15px;
+  }
+}

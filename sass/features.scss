@@ -18,3 +18,71 @@
 .features__list li {
   margin-bottom: 50px;
 }
+
+@media (min-width: 321px) and (max-width: 660px) {
+	.features {
+		display: flex;
+		flex-direction: row-reverse;
+		width: 100%;
+		padding: 0;
+	}
+
+	.features__list {
+		width: 50%;
+		margin-left: 45px;
+		text-align: left;
+		margin-right: 20px;
+	}
+
+	.features__title {
+		@include font-set(bold, 1.3);
+		font-size: $fsize;
+	}
+
+  .features__description {
+  	@include font-set(400, 1.7);
+  	font-size: $fsize-little;
+  	padding-right: 9px;
+  }
+
+	.features::after {
+		margin: auto auto;
+		transform: scale(1.3);
+	}
+}
+
+@media (min-width: 661px) {
+	.features {
+	  width: 960px;
+	  margin: $mgn;
+	}
+
+	.features__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.features__item {
+		width: 250px;
+	}
+
+	.features__title {
+		@include font-set(bold, 1);
+		font-size: 30px;
+	}
+
+	.features__description {
+  	@include font-set(400, 1.7);
+  	font-size: $fsize;
+  }
+
+  .features::after {
+  	display: none;
+  }
+
+  .features__item::before {
+  	display: block;
+  	content: url("../img/iphone-screen-mobile@1x.png");
+  	margin-top: 50px;
+  }
+}

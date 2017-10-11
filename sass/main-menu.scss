@@ -1,3 +1,77 @@
+.main-menu__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 28px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.main-menu--closed .main-menu__toggle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 50px;
+  height: 2px;
+  background-color: $fcolor;
+  box-shadow: 0 8px 0 0 $fcolor, 0 16px 0 0 $fcolor;
+}
+
+.main-menu--closed:hover .main-menu__toggle::before {
+    background-color: $color-third;
+    box-shadow: 0 8px 0 0 $color-third, 0 16px 0 0 $color-third;
+}
+
+.main-menu--closed:active .main-menu__toggle::before {
+    background-color: $color-third;
+    box-shadow: 0 8px 0 0 $color-third, 0 16px 0 0 $color-third;
+}
+
+.main-menu--closed:visited .main-menu__toggle::before {
+    background-color: rgba(210, 40, 86, .3);
+    box-shadow: 0 8px 0 0 rgba(210, 40, 86, .3), 0 16px 0 0 rgba(210, 40, 86, .3);
+}
+
+.main-menu--opened .main-menu__toggle {
+  top: -15px;
+  right: 0;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 8px;
+    width: 45px;
+    height: 2px;
+    background-color: $fcolor;
+  }
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-menu--opened:hover .main-menu__toggle {
+  &::before,
+  &::after {
+    background-color: $color-third;
+  }
+}
+
+.main-menu--opened:active .main-menu__toggle {
+  &::before,
+  &::after {
+    background-color: $color-third;
+  }
+}
+
 .main-menu__list {
   display: none;
   position: absolute;
@@ -9,6 +83,7 @@
   list-style: none;
   background-color: $bg-color;
   text-align: center;
+  z-index: 5;
 }
 
 .main-menu__list a {
@@ -19,5 +94,43 @@
   color: $fcolor;
   text-decoration: none;
   padding: 25px 0;
-  border: 1px solid #000000;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+}
+
+.main-menu__list a:hover {
+  background-color: rgba(0, 0, 0, .1);
+  &:active {
+    background-color: rgba(255, 255, 255, .1)
+  }
+}
+
+@media (min-width: 660px) {
+  .main-menu__toggle {
+    position: absolute;
+    top: 35px;
+    right: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .main-menu__toggle {
+    display: none;
+  }
+
+  .main-menu__list {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    margin-top: 15px;
+    background-color: transparent;
+  }
+
+  .main-menu__list a {
+    @include font-set(400, 1);
+    font-size: $fsize;
+    border: none;
+    text-transform: none;
+    margin-left: 100px;
+  }
 }

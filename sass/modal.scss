@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+.modal .wrapper {
+  flex-direction: column;
+}
+
 .modal__text {
   background-color: $fcolor;
 }

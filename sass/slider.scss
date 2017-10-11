@@ -1,0 +1,26 @@
+.slider {
+	position: relative;
+}
+.slider__pagination {
+	margin-top: 40px;
+	padding: 25px 0;
+}
+
+@media (min-width: 321px) and (max-width: 660px) {
+	.reviews .slider__pagination,
+	.prices .slider__pagination {
+		display: none;
+	}
+}
+
+@media (min-width: 661px) {
+	.reviews .slider__pagination,
+	.prices .slider__pagination {
+		display: none;
+	}
+	
+	.slider {
+		width: 960px;
+		margin: 0 auto;
+	}
+}

@@ -14,6 +14,7 @@ body {
   word-wrap: break-word;
   position: relative;
   font-family: $primary-font;
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -25,6 +26,7 @@ body {
 }
 
 .wrapper {
+  position: relative;
   width: 280px;
-  padding: 0 20px;
+  margin: $mgn;
 }

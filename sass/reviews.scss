@@ -20,3 +20,63 @@
   font-size: $fsize-little;
   line-height: 2.1;
 }
+
+@media (min-width: 321px) and (max-width: 660px) {
+  .reviews {
+    width: 100%;
+    padding: 0;
+  }
+
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .reviews__author {
+    @include font-set(bold, 1.5);
+    font-size: 20px;
+  }
+
+  .reviews__author::after {
+    @include font-set(400, 2.1);
+    display: block;
+    content: "25 лет, водитель трамвая";
+    font-size: $fsize-little;
+    text-align: center;
+  }
+
+  .reviews__text {
+    @include font-set(400, 1.6);
+    font-size: $fsize;
+  }
+}
+
+@media (min-width: 661px) {
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+  }
+
+  .reviews__author {
+    @include font-set(bold, 1.25);
+    font-size: $fsize-big;
+  }
+
+  .reviews__author::after {
+    @include font-set(400, 2.1);
+    display: block;
+    content: "25 лет, водитель трамвая";
+    font-size: $fsize-little;
+    text-align: center;
+  }
+}

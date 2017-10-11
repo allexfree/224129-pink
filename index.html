@@ -13,29 +13,27 @@
         <a class="page-header__logo">
           <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Logo">
         </a>
-        <nav class="main-menu">
+        <nav class="main-menu main-menu--closed">
           <button class="main-menu__toggle">
-            <span class="main-menu__toggle-item">
-
-            </span>
+            <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-menu__list">
             <li class="main-menu__item"><a href="index.html">Главная</a></li>
             <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
             <li class="main-menu__item"><a href="competition.html">Конкурс</a></li>
-            <li class="main-menu__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+            <li class="main-menu__item"><a href="https://htmlacademy.ru/">HTML academy</a></li>
           </ul>
         </nav>
-        <div class="intro intro--index">
-          <a class="btn intro__btn" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
-          <div class="intro__apps">
-            <a class="intro__apps-item" href="https://www.apple.com/ru/itunes/"><img class="intro__apps-item--apple" src="img/logo-apple.svg" alt="Apple"></a>
-            <a class="intro__apps-item" href="https://play.google.com/store"><img class="intro__apps-item--android" src="img/logo-android.svg" alt="Android"></a>
-            <a class="intro__apps-item" href="https://www.microsoft.com/ru-RU/store/apps"><img class="intro__apps-item--windows" src="img/logo-microsoft.svg" alt="Windows" ></a>
-          </div>
-          <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
       </div>
+    </div>
+    <div class="intro intro--index">
+      <a class="btn intro__btn" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+      <div class="intro__apps">
+        <a class="intro__apps-item" href="https://www.apple.com/ru/itunes/"><img class="intro__apps-item--apple" src="img/logo-apple.svg" alt="Apple"></a>
+        <a class="intro__apps-item" href="https://play.google.com/store"><img class="intro__apps-item--android" src="img/logo-android.svg" alt="Android"></a>
+        <a class="intro__apps-item" href="https://www.microsoft.com/ru-RU/store/apps"><img class="intro__apps-item--windows" src="img/logo-microsoft.svg" alt="Windows" ></a>
+      </div>
+      <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
   </header>
   <main class="page-main">
@@ -50,7 +48,7 @@
         </li>
         <li class="features__item">
           <h2 class="features__title">Меняет мир вокруг</h2>
-          <p class="features__desription">Сделайте снимоки украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <p class="features__description">Сделайте снимоки украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </li>
         <li class="features__item">
           <h2 class="features__title">Заводит новых друзей</h2>
@@ -58,11 +56,25 @@
         </li>
       </ul>
     </div>
+    <section class="effect">
+      <div class="effect__left-block">
+
+      </div>
+      <div class="wrapper">
+        <h2 class="effect__title">
+          Эффект на 24 часа
+        </h2>
+        <p class="effect__text">
+          Британские ученые провели исследования
+          и доказали, что положительный эффект
+          от использования приложения длится 
+          целые сутки!
+        </p>
+        <a href="#" class="effect__link">Узнать больше об исследовании</a>
+      </div>
+    </section>
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы о нас</h2>
-      <input name="button" id="reviews-button_1" type="radio">
-      <input name="button" id="reviews-button_2" type="radio">
-      <input name="button" id="reviews-button_3" type="radio">
       <div class="reviews__slider slider">
         <blockquote class="reviews__item">
           <cite class="reviews__author">
@@ -90,6 +102,9 @@
         </blockquote>
       </div>
       <div class="slider__pagination">
+        <input name="button" id="reviews-button_1" type="radio">
+        <input name="button" id="reviews-button_2" type="radio">
+        <input name="button" id="reviews-button_3" type="radio">
         <label class="slider__pagination-btn" for="reviews-button_1"></label>
         <label class="slider__pagination-btn" for="reviews-button_2"></label>
         <label class="slider__pagination-btn" for="reviews-button_3"></label>
@@ -99,10 +114,7 @@
       <div class="wrapper">
         <h2 class="visually-hidden">Наши тарифы</h2>
         <div class="prices__slider slider">
-          <input name="button" id="prices-button_1" type="radio">
-          <input name="button" id="prices-button_2" type="radio">
-          <input name="button" id="prices-button_3" type="radio">
-          <table class="prices__table"><!--Program one-->
+          <table class="prices__table">
             <tr class="prices__item">
               <th class="prices__cell prices__cell--head">
                 Стандарт<span>3,99 usd</span>
@@ -133,7 +145,7 @@
               </td>
             </tr>
           </table>
-          <table class="prices__table"><!--Program two-->
+          <table class="prices__table">
             <tr class="prices__item">
               <th class="prices__cell prices__cell--head">
                 База<span>1,99 usd</span>
@@ -164,7 +176,7 @@
               </td>
             </tr>
           </table>
-          <table class="prices__table"><!--Program three-->
+          <table class="prices__table">
             <tr class="prices__item">
               <th class="prices__cell prices__cell--head">
                 Анлим<span>9,99 usd</span>
@@ -196,6 +208,9 @@
             </tr>
           </table>
           <div class="slider__pagination">
+            <input name="button" id="prices-button_1" type="radio">
+            <input name="button" id="prices-button_2" type="radio">
+            <input name="button" id="prices-button_3" type="radio">
             <label class="slider__pagination-btn" for="prices-button_1"></label>
             <label class="slider__pagination-btn" for="prices-button_2"></label>
             <label class="slider__pagination-btn" for="prices-button_3"></label>
@@ -213,20 +228,26 @@
         Свяжитесь с нами!
       </p>
       <div class="contacts__items">
-        <b class="contacts__item-title">
-          Звоните:
-        </b>
-        <a class="contacts__link" href="tel:+78125556666">+7(812)555-66-66</a>
-        <b class="contacts__item-title">
-          Пишите:
-        </b>
-        <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        <b class="contacts__item-title">
-          Приезжайте в гости:
-        </b>
-        <p class="contacts__item-text">
-          Большая Конюшенная, 19/8
-        </p>
+        <div class="cintacts__item-block">
+          <b class="contacts__item-title">
+            Звоните:
+          </b>
+          <a class="contacts__link" href="tel:+78125556666">+7(812)555-66-66</a>
+        </div>
+        <div class="cintacts__item-block">
+          <b class="contacts__item-title">
+            Пишите:
+          </b>
+          <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="cintacts__item-block">
+          <b class="contacts__item-title">
+            Приезжайте в гости:
+          </b>
+          <p class="contacts__item-text">
+            ул. Большая Конюшенная, 19/8
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -236,12 +257,12 @@
   <footer class="page-footer--hidden">
     <div class="wrapper">
       <a class="page-footer__logo" href="#">
-        <img class="page-footer__logo-img" src="#" alt="logo">
+        <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" alt="logo">
       </a>
       <div class="page-footer__social">
-        <a class="page-footer__social-link" href="https://twitter.com/"><i class="fa fa-twitter"></i>Twitter</a>
-        <a class="page-footer__social-link" href="https://www.facebook.com/"><i class="fa fa-facebook"></i>Facebook</a>
-        <a class="page-footer__social-link" href="https://www.youtube.com"><i class="fa fa-youtube-play"></i>Youtube</a>
+        <a class="page-footer__social-link" href="https://twitter.com/"><img class="page-footer__social-img" src="img/icon-twitter.svg" alt="Twitter"></a>
+        <a class="page-footer__social-link" href="https://www.facebook.com/"><img class="page-footer__social-img" src="img/icon-facebook.svg" alt="Facebook"></a>
+        <a class="page-footer__social-link" href="https://www.youtube.com"><img class="page-footer__social-img" src="img/icon-youtube.svg" alt="Youtube"></a>
       </div>
       <div class="page-footer__copyright">
         Разработано<a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="75" height="22" alt="HTML academy" class="page-footer__developer-img"></a>

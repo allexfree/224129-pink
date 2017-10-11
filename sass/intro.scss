@@ -1,20 +1,38 @@
 .intro {
   @include font-set(300, 1.7);
-  height: 240px;
+  height: 300px;
   background-color: $color-second;
-  background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-repeat: no-repeat;
   color: $fcolor;
   text-align: center;
   font-size: $fsize-little;
-  padding: 0 0 30px 0;
+  //padding: 0 20px 30px;
+  position: relative;
+  display: table-row;
+}
+
+
+.intro__title {
+  display: none;
+}
+
+.intro__apps {
+  margin: $mgn;
+}
+
+.intro__apps-item {
+  margin: 15px;
+}
+
+.intro__apps-item img {
+  width: 50px;
+  height: 50px;
 }
 
 .intro__btn {
   @include font-set(bold, 1);
   display: block;
   width: 280px;
-  margin: 30px auto;
+  margin: 40px auto;
   border: 3px solid #ffffff;
   text-align: center;
   font-size: $fsize;
@@ -25,12 +43,52 @@
 }
 
 .intro__description {
-  padding: 0 20px;
+  padding: 25px;
+  margin: $mgn;
 }
 
-.intro__title {
-  padding: 0 20px;
-  font-size: $fsize-big;
-  font-weight: 300;
-  color: $fcolor;
+.intro::after {
+  display: block;
+  position: absolute;
+  bottom: 300px;
+  left: 0;
+  content: "";
+  width: 258px;
+  height: 286px;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+}
+
+@media (min-width: 660px) {
+  .intro {
+    height: 100vh;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 10;
+  }
+
+  .intro::after {
+    @include font-set(300, 1.3);
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    content: "Взгляните на жизнь иначе!";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .intro__btn {
+    margin-top: 250px;
+  }
+}
+
+@media (min-width: 960px) {
 }

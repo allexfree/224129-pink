@@ -1,10 +1,11 @@
 .prices {
   background-color: $color-first;
   text-align: center;
+  margin: $mgn;
 }
 
 .prices .wrapper {
-  margin: 0;
+  display: block;
 }
 
 .prices__table {
@@ -42,4 +43,60 @@
   display: block;
   font-size: $fsize-big;
   font-weight: 300;
+}
+
+.prices__table:first-child .prices__cell--head::after {
+  @include font-set(600, 2.1);
+  display: block;
+  position: absolute;
+  content: "Хит";
+  font-size: $fsize-little;
+  text-transform: uppercase;
+  background-image: url("../img/bg-hit.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 321px) and (max-width: 660px) {
+  .prices {
+    padding: 50px 0;
+  }
+  .prices .wrapper {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .prices__table {
+    width: 30%;
+  }
+
+  .prices__slider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 661px) {
+  .prices {
+    width: 100%;
+    padding: 50px 0;
+  }
+
+  .prices .wrapper {
+    width: 960px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .prices__table {
+    width: 30%;
+  }
+
+  .prices__slider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
