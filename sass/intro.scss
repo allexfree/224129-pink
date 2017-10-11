@@ -5,7 +5,6 @@
   color: $fcolor;
   text-align: center;
   font-size: $fsize-little;
-  //padding: 0 20px 30px;
   position: relative;
   display: table-row;
 }
@@ -88,7 +87,4 @@
   .intro__btn {
     margin-top: 250px;
   }
-}
-
-@media (min-width: 960px) {
 }
