@@ -22,18 +22,18 @@
 }
 
 .main-menu--closed:hover .main-menu__toggle::before {
-    background-color: $color-third;
-    box-shadow: 0 8px 0 0 $color-third, 0 16px 0 0 $color-third;
+  background-color: $color-third;
+  box-shadow: 0 8px 0 0 $color-third, 0 16px 0 0 $color-third;
 }
 
 .main-menu--closed:active .main-menu__toggle::before {
-    background-color: $color-third;
-    box-shadow: 0 8px 0 0 $color-third, 0 16px 0 0 $color-third;
+  background-color: $color-third;
+  box-shadow: 0 8px 0 0 $color-third, 0 16px 0 0 $color-third;
 }
 
 .main-menu--closed:visited .main-menu__toggle::before {
-    background-color: rgba(210, 40, 86, .3);
-    box-shadow: 0 8px 0 0 rgba(210, 40, 86, .3), 0 16px 0 0 rgba(210, 40, 86, .3);
+  background-color: rgba(210, 40, 86, 0.3);
+  box-shadow: 0 8px 0 0 rgba(210, 40, 86, 0.3), 0 16px 0 0 rgba(210, 40, 86, 0.3);
 }
 
 .main-menu--opened .main-menu__toggle {
@@ -49,10 +49,12 @@
     height: 2px;
     background-color: $fcolor;
   }
+
   &::before {
     transform: rotate(45deg);
     box-shadow: none;
   }
+
   &::after {
     transform: rotate(-45deg);
   }
@@ -99,9 +101,9 @@
 }
 
 .main-menu__list a:hover {
-  background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, 0.1);
   &:active {
-    background-color: rgba(255, 255, 255, .1)
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
 
