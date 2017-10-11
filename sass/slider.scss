@@ -15,7 +15,10 @@
 }
 
 @media (min-width: 661px) {
-  .reviews .slider__pagination,
+  .reviews .slider__pagination {
+    display: none;
+  }
+
   .prices .slider__pagination {
     display: none;
   }
