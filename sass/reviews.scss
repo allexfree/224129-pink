@@ -23,14 +23,10 @@
 
 @media (min-width: 321px) and (max-width: 660px) {
   .reviews {
-    width: 100%;
-    padding: 0;
-  }
-
-  .reviews {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
     padding: 50px 0;
   }
 
